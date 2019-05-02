@@ -28,8 +28,9 @@ date_format = "January 2006"
   description = """
   Part of Adobe Media Optimizer team:
   
-  * writing Python code for time-sensitive and high volume data synchronization
-  * refactoring data pipelines for advertising attribution and bid models
+  * Currently, working on building a cross-datacenter, near real-time data pipeline using [Kafka](https://kafka.apache.org/) for web surfer events [attribution](https://en.wikipedia.org/wiki/Attribution_(marketing))
+  * Implemented a data pipeline for search keyword performance data using [PostgreSQL](https://www.postgresql.org/), [Hadoop](https://hadoop.apache.org/) and [Presto](http://prestodb.github.io/)
+  * Extended AMO back-end framework for high volume and time sensitive data synchronization between AMO infrastructure and the Pinterest Ad Platform using APIs written in Python
   """
 
 [[experience]]
@@ -39,7 +40,7 @@ date_format = "January 2006"
   location = "Bangalore, India"
   date_start = "2016-05-02"
   date_end = "2016-07-31"
-  description = """Used Topic Models like Latent Dirichlet Allocation for analysis of user click data in Adobe apps like Photoshop."""
+  description = """Used Topic Models like Latent Dirichlet Allocation for analysis of user click data in Adobe apps like Photoshop"""
 
 [[experience]]
   title = "Software Development Intern"
