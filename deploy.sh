@@ -24,6 +24,8 @@ git push origin master
 cd ..
 
 # Commit to project repo
+echo -e "\033[0;32mPushing changes to project repo...\033[0m"
+
 git add -u 
 
 git commit -m "$msg"
