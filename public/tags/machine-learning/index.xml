@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on Palash Chauhan</title>
+    <link>/tags/machine-learning/</link>
+    <description>Recent content in Machine Learning on Palash Chauhan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Mon, 10 Apr 2017 00:00:00 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Poisson Matrix Factorization</title>
+      <link>/project/poisson/</link>
+      <pubDate>Mon, 10 Apr 2017 00:00:00 +0530</pubDate>
+      
+      <guid>/project/poisson/</guid>
+      <description>Probabilistic Models for Bayesion Recommender Systems.</description>
+    </item>
+    
+    <item>
+      <title>Application Tool Recommendation</title>
+      <link>/publication/topic-models/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0530</pubDate>
+      
+      <guid>/publication/topic-models/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Malware Detection using Machine Learning</title>
+      <link>/project/malware-detection-using-machine-learning/</link>
+      <pubDate>Tue, 14 Feb 2017 00:00:00 +0530</pubDate>
+      
+      <guid>/project/malware-detection-using-machine-learning/</guid>
+      <description>Predicting whether an execuatable is malware or benign.</description>
+    </item>
+    
+    <item>
+      <title>Dense Image Captioning</title>
+      <link>/project/dense-image-captioning/</link>
+      <pubDate>Sun, 11 Dec 2016 00:00:00 +0530</pubDate>
+      
+      <guid>/project/dense-image-captioning/</guid>
+      <description>Teaching a computer vision system to localize and describe salient regions in images in natural language</description>
+    </item>
+    
+    <item>
+      <title>Automatic Abstract Generation for Research Papers</title>
+      <link>/project/automatic-abstract-generation-for-research-papers/</link>
+      <pubDate>Sat, 10 Dec 2016 00:00:00 +0530</pubDate>
+      
+      <guid>/project/automatic-abstract-generation-for-research-papers/</guid>
+      <description>Text Summarization for Long Documents like research papers.</description>
+    </item>
+    
+  </channel>
+</rss>

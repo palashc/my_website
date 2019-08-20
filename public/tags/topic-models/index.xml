@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Topic Models on Palash Chauhan</title>
+    <link>/tags/topic-models/</link>
+    <description>Recent content in Topic Models on Palash Chauhan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Wed, 01 Mar 2017 00:00:00 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/topic-models/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Application Tool Recommendation</title>
+      <link>/publication/topic-models/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0530</pubDate>
+      
+      <guid>/publication/topic-models/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bayesian ML on Palash Chauhan</title>
+    <link>/tags/bayesian-ml/</link>
+    <description>Recent content in Bayesian ML on Palash Chauhan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Mon, 10 Apr 2017 00:00:00 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/bayesian-ml/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Poisson Matrix Factorization</title>
+      <link>/project/poisson/</link>
+      <pubDate>Mon, 10 Apr 2017 00:00:00 +0530</pubDate>
+      
+      <guid>/project/poisson/</guid>
+      <description>Probabilistic Models for Bayesion Recommender Systems.</description>
+    </item>
+    
+  </channel>
+</rss>

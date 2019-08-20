@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer Architecture on Palash Chauhan</title>
+    <link>/tags/computer-architecture/</link>
+    <description>Recent content in Computer Architecture on Palash Chauhan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Fri, 12 May 2017 00:00:00 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/computer-architecture/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Load Value Prediction</title>
+      <link>/project/load-value-prediction/</link>
+      <pubDate>Fri, 12 May 2017 00:00:00 +0530</pubDate>
+      
+      <guid>/project/load-value-prediction/</guid>
+      <description>Predicting values loaded by machine intructions to aid Instruction Level Parallelism.</description>
+    </item>
+    
+  </channel>
+</rss>

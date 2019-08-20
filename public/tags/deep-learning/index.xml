@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Learning on Palash Chauhan</title>
+    <link>/tags/deep-learning/</link>
+    <description>Recent content in Deep Learning on Palash Chauhan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 11 Dec 2016 00:00:00 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dense Image Captioning</title>
+      <link>/project/dense-image-captioning/</link>
+      <pubDate>Sun, 11 Dec 2016 00:00:00 +0530</pubDate>
+      
+      <guid>/project/dense-image-captioning/</guid>
+      <description>Teaching a computer vision system to localize and describe salient regions in images in natural language</description>
+    </item>
+    
+    <item>
+      <title>Automatic Abstract Generation for Research Papers</title>
+      <link>/project/automatic-abstract-generation-for-research-papers/</link>
+      <pubDate>Sat, 10 Dec 2016 00:00:00 +0530</pubDate>
+      
+      <guid>/project/automatic-abstract-generation-for-research-papers/</guid>
+      <description>Text Summarization for Long Documents like research papers.</description>
+    </item>
+    
+  </channel>
+</rss>
