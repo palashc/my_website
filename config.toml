@@ -52,18 +52,18 @@ enableGitInfo = false
 
   # Your details.
   name = "Palash Chauhan"
-  role = "Member of Technical Staff"
+  role = "Masters Student in Computer Science"
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Adobe Inc.", url = "https://www.adobe.com/" } ]
+  organizations = [ { name = "University of California, San Diego", url = "https://ucsd.edu/" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "dp.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
 
   # Details for the Contact Widget
   email = "palashc983@gmail.com"
-  address = "J-801, Purva Fountain Square, Marathahalli, 560037, Bangalore, Karnataka"
+  address = "San Diego, CA 92122"
   #office_hours = "Monday 10:00 to 13:00 or email for appointment"
   phone = "+91 72757 64929"
   #skype = "echo123"

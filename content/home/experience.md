@@ -24,12 +24,12 @@ date_format = "January 2006"
   company_url = "https://www.adobe.com"
   location = "Bangalore, India"
   date_start = "2017-07-21"
-  date_end = ""
+  date_end = "2019-08-15"
   description = """
   Part of Adobe Media Optimizer team:
   
-  * Currently, working on building a cross-datacenter, near real-time data pipeline using [Kafka](https://kafka.apache.org/) for web surfer events [attribution](https://en.wikipedia.org/wiki/Attribution_(marketing))
-  * Implemented a data pipeline for search keyword performance data using [PostgreSQL](https://www.postgresql.org/), [Hadoop](https://hadoop.apache.org/) and [Presto](http://prestodb.github.io/)
+  * Designed and implemented a cross-datacenter, near real-time architecture using [Kafka](https://kafka.apache.org/) for search advertising events [attribution](https://en.wikipedia.org/wiki/Attribution_(marketing))
+  * Implemented a data pipeline for search keyword data using [PostgreSQL](https://www.postgresql.org/), [Hadoop](https://hadoop.apache.org/) and [Presto](http://prestodb.github.io/)
   * Extended AMO back-end framework for high volume and time sensitive data synchronization between AMO infrastructure and the Pinterest Ad Platform using APIs written in Python
   """
 
