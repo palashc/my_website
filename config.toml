@@ -65,7 +65,7 @@ enableGitInfo = false
   email = "palashc983@gmail.com"
   address = "San Diego, CA 92122"
   #office_hours = "Monday 10:00 to 13:00 or email for appointment"
-  phone = "+91 72757 64929"
+  phone = "+1(858)729-8701"
   #skype = "echo123"
   #telegram = ""
   #keybase = ""  # Your keybase.io username.
@@ -255,6 +255,11 @@ enableGitInfo = false
     icon = "file-pdf"
     icon_pack = "fas"
     link = "files/cv.pdf"
+
+  [params.social]]
+    icon = "linkedin"
+    icon_pack = "fa"
+    link = "//linkedin.com/in/pc0"
   
   [[params.social]]
     icon = "github"
