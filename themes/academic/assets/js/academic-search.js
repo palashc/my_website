@@ -14,16 +14,18 @@ let fuseOptions = {
   shouldSort: true,
   includeMatches: true,
   tokenize: true,
-  threshold: 0.0,
+  threshold: search_config.threshold,  // Set to ~0.3 for parsing diacritics and CJK languages.
   location: 0,
   distance: 100,
   maxPatternLength: 32,
-  minMatchCharLength: 2,
+  minMatchCharLength: search_config.minLength,  // Set to 1 for parsing CJK languages.
   keys: [
-    {name:'title', weight:0.8},
+    {name:'title', weight:0.99}, /* 1.0 doesn't work o_O */
     {name:'summary', weight:0.6},
-    {name:'content', weight:0.5},
-    {name:'tags', weight:0.3}
+    {name:'authors', weight:0.5},
+    {name:'content', weight:0.2},
+    {name:'tags', weight:0.5},
+    {name:'categories', weight:0.5}
   ]
 };
 
@@ -41,8 +43,8 @@ function getSearchQuery(name) {
 
 // Set query in URI without reloading the page.
 function updateURL(url) {
-  if (history.pushState) {
-    window.history.pushState({path:url}, '', url);
+  if (history.replaceState) {
+    window.history.replaceState({path:url}, '', url);
   }
 }
 
@@ -53,9 +55,6 @@ function initSearch(force, fuse) {
   // If query deleted, clear results.
   if ( query.length < 1) {
     $('#search-hits').empty();
-    $('.docs-content .article').show();
-  } else {
-    $('.docs-content .article').hide();
   }
 
   // Check for timer event (enter key not pressed) and query less than minimum length required.
@@ -74,10 +73,8 @@ function searchAcademic(query, fuse) {
   let results = fuse.search(query);
   // console.log({"results": results});
 
-  if ($('.docs-content').length > 0)
-    $('#search-hits').append('<h1>' + i18n.results + '</h1>');
-
   if (results.length > 0) {
+    $('#search-hits').append('<h3 class="mt-0">' + results.length + ' ' + i18n.results + '</h3>');
     parseResults(query, results);
   } else {
     $('#search-hits').append('<div class="search-no-results">' + i18n.no_results + '</div>');
@@ -87,9 +84,17 @@ function searchAcademic(query, fuse) {
 // Parse search results.
 function parseResults(query, results) {
   $.each( results, function(key, value) {
-    let content = value.item.content;
+    let content_key = value.item.section;
+    let content = "";
     let snippet = "";
     let snippetHighlights = [];
+
+    // Show abstract in results for content types where the abstract is often the primary content.
+    if (["publication", "talk"].includes(content_key)) {
+      content = value.item.summary;
+    } else {
+      content = value.item.content;
+    }
 
     if ( fuseOptions.tokenize ) {
       snippetHighlights.push(query);
@@ -105,14 +110,13 @@ function parseResults(query, results) {
     }
 
     if (snippet.length < 1) {
-      snippet += content.substring(0, summaryLength*2);
+      snippet += value.item.summary;  // Alternative fallback: `content.substring(0, summaryLength*2);`
     }
 
     // Load template.
-    var template = $('#search-hit-fuse-template').html();
+    let template = $('#search-hit-fuse-template').html();
 
     // Localize content types.
-    let content_key = value.item.section;
     if (content_key in content_type) {
       content_key = content_type[content_key];
     }
@@ -154,12 +158,15 @@ function render(template, data) {
 // If Academic's in-built search is enabled and Fuse loaded, then initialize it.
 if (typeof Fuse === 'function') {
 // Wait for Fuse to initialize.
-  $.getJSON(search_index_filename, function (search_index) {
+  $.getJSON(search_config.indexURI, function (search_index) {
     let fuse = new Fuse(search_index, fuseOptions);
 
     // On page load, check for search query in URL.
     if (query = getSearchQuery('q')) {
+      $("body").addClass('searching');
+      $('.search-results').css({opacity: 0, visibility: "visible"}).animate({opacity: 1},200);
       $("#search-query").val(query);
+      $("#search-query").focus();
       initSearch(true, fuse);
     }
 
