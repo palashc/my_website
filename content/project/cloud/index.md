@@ -1,6 +1,6 @@
 +++
 # Project title.
-title = "Comparing Cloud Models"
+title = "Comparing Virtualization Techniques"
 
 # Date this page was created.
 date = 2019-12-10T00:00:00
