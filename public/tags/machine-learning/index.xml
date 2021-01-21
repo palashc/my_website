@@ -33,17 +33,6 @@ inferring user preferences and item attributes from data. &lt;/br&gt; In this pr
     </item>
     
     <item>
-      <title>Malware Detection using Machine Learning</title>
-      <link>/project/malware/</link>
-      <pubDate>Tue, 14 Feb 2017 00:00:00 -0800</pubDate>
-      <guid>/project/malware/</guid>
-      <description>&lt;p&gt;Malwares remain a large problem as attackers use them to disrupt systems which in turn result in costly after effects. Malware detec-
-tion is mainly carries out using heuristic and signature-based methods which fails to perform due to continuous evolution of different
-malware families. In the past decade, Deep Learning has shown very strong promises in order to solve any given problem. This project explores ways to detect malwares by extracting features from binaries and using these to train a deep neural network. Experiments were also carried out using AutoEncoders, LSTM and CNN. We also experimented with raw byte sequence as a feature and the results shows that the neural network is able to learn quite good and extract meaningful information with this raw information.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Dense Image Captioning</title>
       <link>/project/dense/</link>
       <pubDate>Sun, 11 Dec 2016 00:00:00 -0800</pubDate>
